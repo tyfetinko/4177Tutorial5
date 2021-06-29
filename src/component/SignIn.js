@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import {useHistory} from "react-router-dom"
 import axios from 'axios';
 import {Button, Container, Form} from "react-bootstrap";
-import App from './App';
-const Register = () => {
+
+const SignIn = () => {
     let history = useHistory();
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
@@ -58,4 +58,4 @@ const Register = () => {
         </>
     )
 };
-export default Register;
+export default SignIn

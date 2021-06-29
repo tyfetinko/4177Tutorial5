@@ -6,15 +6,13 @@ import {
 } from 'react-bootstrap';
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
-
-
-const Display = () => {
+const Detail = () => {
     let {id} = useParams();
     const [user, setUser] = useState([]);
     useEffect(() => {
 
         axios
-            .get(`https://tutorial4-api.herokuapp.com/api/users/${id}`)
+            .get(`https://tutorial3for4177.herokuapp.com/api/users/${id}`)
             .then(response => {
                 return setUser(response.data.data)
             });
@@ -61,4 +59,4 @@ const Display = () => {
         </>
     )
 };
-export default Display
+export default Detail

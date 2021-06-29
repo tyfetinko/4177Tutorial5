@@ -11,7 +11,7 @@ const Users = () => {
     const [filter, setFilter] = useState({firstName: '', lastName: ''});
     useEffect(() => {
         axios
-            .get("https://tutorial4-api.herokuapp.com/api/users/")
+            .get("https://tutorial3for4177.herokuapp.com//api/users/")
             .then(response => {
                 return setUsers(response.data.data)
             });
